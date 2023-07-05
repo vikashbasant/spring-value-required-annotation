@@ -10,16 +10,19 @@ public class Student {
 
     @Value("${student.name}")
     public void setName(String name) {
+        System.out.println("setter method for set name");
         this.name = name;
     }
 
     @Value("${student.interestedCourse}")
     public void setInterestedCourse(String interestedCourse) {
+        System.out.println("setter method for set interestedCourse");
         this.interestedCourse = interestedCourse;
     }
 
     @Value(value = "${student.hobby}")
     public void setHobby(String hobby) {
+        System.out.println("setter method for set hobby");
         this.hobby = hobby;
     }
 
