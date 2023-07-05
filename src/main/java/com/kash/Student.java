@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 public class Student {
 
-    @Value("${student.name}")
+    @Value("${student.name:}")
     private String name;
 
     @Value("${student.interestedCourse}")
