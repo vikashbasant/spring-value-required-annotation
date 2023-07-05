@@ -9,17 +9,15 @@
         https://www.springframework.org/schema/context/spring-context.xsd">
 
 
-    <!--by using <context:annotation-config/> we are enabled @Autowired annotation:-->
+    <!--by using <context:annotation-config/> we are enabled all annotation:-->
     <context:annotation-config/>
+
 
     <!--by using <context:property-placeholder location="student-info.properties"/> from the given location, we are fetch the dynamic value:-->
     <context:property-placeholder location="student-info.properties"/>
 
     <!--Create an Object with the Student-->
     <bean id="student" class="com.kash.Student">
-        <property name="name" value="${student.name}"/>
-        <property name="interestedCourse" value="${student.interestedCourse}"/>
-        <property name="hobby" value="${student.hobby}"/>
 
     </bean>
 
