@@ -1,8 +1,11 @@
 package com.kash;
 
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.beans.factory.annotation.Value;
 
+/*
+* @Value("${student.name:}") : this means name filed is optional
+* @Value("${student.name}") : this field is mandatory
+* */
 public class Student {
 
     @Value("${student.name:}")
